@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <title>Gastos</title>
+</head>
+<body>
+    <h1>Mi Aplicacion para Gastos</h1>
+    <div class="row">
+
+        <div class="col l5 offset-l1 s12">
+            <div class="tableformat">
+                <table id="tansactionTable">
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Descripcion</th>
+                        <th>Monto</th>
+                        <th>Categoria</th>
+                        <th>Accion</th>
+                    </tr>
+        <!--             <tr>
+                        <td>Ingreso</td>
+                        <td>Sueldo</td>
+                        <td>1000</td>
+                        <td>Trabajo</td>
+                    </tr>
+                    <tr>
+                        <td>Egreso</td>
+                        <td>Hamburguesa Big Mac</td>
+                        <td>7</td>
+                        <td>Comida</td>
+                    </tr>  -->           
+
+                </table>
+
+            </div>
+        </div>
+
+        <div class="col l5 s12">
+            <div class="col s8 offset-s2">
+                <form id="transactionForm">
+                    <div class="formField">
+                        <!-- Tipo de transaccion -->
+                        <p>
+                            <span>Transaccion</span>
+                            <label>
+                                <i class="material-icons">add_circle_outline</i>
+                                <input class="with-gap" name="transactionType" type="radio" checked value="Ingreso"/>
+                                <span>Ingreso</span>
+                            </label>
+                            <label>
+                                <i class="material-icons">remove_circle_outline</i>
+                                <input class="with-gap" name="transactionType" type="radio" value="Egreso"/>
+                                <span>Egreso</span>
+                            </label>
+
+                        </p>
+
+    <!--                     <label for="ingreso">Ingreso</label>
+                        <input id = "ingreso" name="transactionType" type="radio" value="Ingreso" >
+                        <label for="egreso">Egreso</label>
+                        <input id = "egreso" name="transactionType" type="radio" value="Egreso"> -->
+                    </div>
+                    <!-- <div  class="formField, input-field col s6"> -->
+                    <!-- <div  class="input-field col s6"> -->
+                    <div  class="input-field">
+                        <label for="descriptionType">Descripcion</label>
+                        <input id = "descriptionType" name="descriptionType" type="text">
+                    </div>
+                    <!-- <div  class="formField , input-field col s6"> -->
+                    <!-- <div  class="input-field col s6"> -->
+                    <div  class="input-field">
+                        <label for="amountType">Monto</label>
+                        <input id="amountType" name="amountType" type="number">
+                    </div>
+                    <div  class="formField">
+                        <label for="categoryType">Categoria</label>
+                        <!-- <input id="categoryType" name="categoryType" type="text"> -->
+                        <select  class="browser-default" id="categoryType" name="categoryType" type="text">
+                            <!-- <option value="" disabled selected>Seleccione una opcion</option>
+                            <option value="Alquiler">Alquiler</option>
+                            <option value="Comida">Comida</option>
+                            <option value="Diversion">Diversion</option> -->
+                        </select>
+                    </div>
+                    <div  class="formField">
+                        <button id="botonEnvio">Añadir Gasto</button> 
+                    </div>
+        
+                </form>
+            </div>                
+        </div>
+
+    </div>
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src = "resources/js/data.js"></script>
+    <script src = "resources/js/scripts.js"></script>
+</body>
+</html>

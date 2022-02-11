@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
+
+/* .formField{ */
+    /* background-color: wheat; */
+    /* padding-bottom: 20px; */
+/* } */
+
+#botonEnvio{
+    font-size: 23px;
+}
+
+td,
+th{
+    text-align: center;
+    padding: 10px;
+    border: solid red 1px;
+}
+
+.tableformat table  {
+    margin: 10px auto;
+}
